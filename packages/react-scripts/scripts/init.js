@@ -255,6 +255,7 @@ module.exports = function(
     );
   }
   console.log();
+  console.log('#passionTrade');
   console.log('Happy hacking!');
 };
 
