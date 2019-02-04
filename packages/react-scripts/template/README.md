@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [fashionTrade's Create React App](https://github.com/FashionTrade/create-ft-react-app).
 
 ## Available Scripts
 

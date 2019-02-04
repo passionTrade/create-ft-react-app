@@ -95,16 +95,19 @@ module.exports = function(
 
   // Setup the script rules
   appPackage.scripts = {
-    start: 'react-scripts start',
+    start: 'yarn generate-settings && react-scripts start',
     build: 'react-scripts build',
     test: 'react-scripts test',
     eject: 'react-scripts eject',
+    'generate-settings':
+      'python3 tools/settings-generator.py tools/settings.js --disable-sentry',
   };
 
+  // ** Moved this code to .eslintrc.js file
   // Setup the eslint config
-  appPackage.eslintConfig = {
-    extends: 'react-app',
-  };
+  // appPackage.eslintConfig = {
+  //   extends: 'react-app',
+  // };
 
   // Setup the browsers list
   appPackage.browserslist = defaultBrowsers;
