@@ -100,7 +100,7 @@ module.exports = function(
     test: 'react-scripts test',
     eject: 'react-scripts eject',
     'generate-settings':
-      'python3 tools/settings-generator.py tools/settings.js --disable-sentry',
+      'FT_ENVIRONMENT=dev python3 tools/settings-generator.py public/settings.js --disable-sentry',
   };
 
   // ** Moved this code to .eslintrc.js file
