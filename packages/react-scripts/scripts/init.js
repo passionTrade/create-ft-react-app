@@ -110,7 +110,11 @@ module.exports = function(
   };
 
   // Add pre-commit hook.
-  appPackage['pre-commit'] = ['lint', 'test'];
+  appPackage['pre-commit'] = ['lint-staged', 'lint', 'test'];
+
+  appPackage['lint-staged'] = {
+    '*.{js,scss,md}': ['prettier --config package.json --write', 'git add'],
+  };
 
   // ** Moved this code to .eslintrc.js file
   // Setup the eslint config
