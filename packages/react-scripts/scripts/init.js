@@ -109,6 +109,9 @@ module.exports = function(
     'i18n:pull': 'yarn i18n:phraseapp pull',
   };
 
+  // Add pre-commit hook.
+  appPackage['pre-commit'] = ['lint', 'test'];
+
   // ** Moved this code to .eslintrc.js file
   // Setup the eslint config
   // appPackage.eslintConfig = {
