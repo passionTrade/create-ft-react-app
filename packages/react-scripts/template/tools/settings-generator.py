@@ -17,30 +17,22 @@ def main():
     'prod': {
       'gtm_post_url_params': '', #TO BE POPULATED
       'intercomId': '', #TO BE POPULATED
-      'sentry_url': '', #TO BE POPULATED
-      'google_maps_api_key': '', #TO BE POPULATED
-      'google_maps_version': ''
+      'sentry_url': '' #TO BE POPULATED
     },
     'dev': {
       'gtm_post_url_params': '', #TO BE POPULATED
       'intercomId': '', #TO BE POPULATED
-      'sentry_url': '', #TO BE POPULATED
-      'google_maps_api_key': '', #TO BE POPULATED
-      'google_maps_version': ''
+      'sentry_url': '' #TO BE POPULATED
     },
     'demo': {
       'gtm_post_url_params': '', #TO BE POPULATED
       'intercomId': '', #TO BE POPULATED
-      'sentry_url': '', #TO BE POPULATED
-      'google_maps_api_key': '', #TO BE POPULATED
-      'google_maps_version': ''
+      'sentry_url': '' #TO BE POPULATED
     },
     'test': {
       'gtm_post_url_params': '', #TO BE POPULATED
       'intercomId': '', #TO BE POPULATED
-      'sentry_url': '', #TO BE POPULATED
-      'google_maps_api_key': '', #TO BE POPULATED
-      'google_maps_version': '' #TO BE POPULATED
+      'sentry_url': '' #TO BE POPULATED
     }
   }
 
@@ -54,17 +46,13 @@ var fashionTradeSettings = {
   gtmId: %s,
   gtmPostUrlParams: %s,
   intercomId: %s,
-  sentry_url: %s,
-  google_maps_api_key: %s,
-  google_maps_version: %s
+  sentry_url: %s
 };""" % (
   json.dumps(environment),
   json.dumps(""), #TO BE POPULATED
   json.dumps(environment_specific_variables[environment]['gtm_post_url_params']),
   json.dumps(environment_specific_variables[environment]['intercomId']),
-  json.dumps(environment_specific_variables[environment]['sentry_url']),
-  json.dumps(environment_specific_variables[environment]['google_maps_api_key']),
-  json.dumps(environment_specific_variables[environment]['google_maps_version'])
+  json.dumps(environment_specific_variables[environment]['sentry_url'])
   )
 
   if settings_file_location:

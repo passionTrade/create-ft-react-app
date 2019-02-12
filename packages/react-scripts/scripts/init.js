@@ -98,9 +98,15 @@ module.exports = function(
     start: 'yarn generate-settings && react-scripts start',
     build: 'react-scripts build',
     test: 'react-scripts test',
+    lint: 'eslint src',
     eject: 'react-scripts eject',
+    updateSnapshots: 'NODE_ENV=test jest --updateSnapshot',
     'generate-settings':
       'FT_ENVIRONMENT=dev python3 tools/settings-generator.py public/settings.js --disable-sentry',
+    'i18n:phraseapp':
+      'export $(cat .env | grep -i PHRASEAPP_ACCESS_TOKEN) && phraseapp',
+    'i18n:push': 'yarn i18n:phraseapp push --wait',
+    'i18n:pull': 'yarn i18n:phraseapp pull',
   };
 
   // ** Moved this code to .eslintrc.js file
