@@ -116,6 +116,10 @@ module.exports = function(
     '*.{js,scss,md}': ['prettier --config package.json --write', 'git add'],
   };
 
+  appPackage.devDependencies = Object.assign({}, appPackage.devDependencies, {
+    'pre-commit': '1.2.2',
+  });
+
   // ** Moved this code to .eslintrc.js file
   // Setup the eslint config
   // appPackage.eslintConfig = {
