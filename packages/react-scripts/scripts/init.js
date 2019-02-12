@@ -98,6 +98,7 @@ module.exports = function(
     start: 'yarn generate-settings && react-scripts start',
     build: 'react-scripts build',
     test: 'react-scripts test',
+    'lint-staged': 'lint-staged',
     lint: 'eslint src',
     eject: 'react-scripts eject',
     updateSnapshots: 'NODE_ENV=test jest --updateSnapshot',
