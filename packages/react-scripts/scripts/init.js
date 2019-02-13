@@ -114,7 +114,7 @@ module.exports = function(
   appPackage['pre-commit'] = ['lint-staged', 'lint', 'test'];
 
   appPackage['lint-staged'] = {
-    '*.{js,scss,md}': ['prettier --config package.json --write', 'git add'],
+    '*.{js,scss,md}': ['prettier --write', 'git add'],
   };
 
   appPackage.devDependencies = Object.assign({}, appPackage.devDependencies, {
