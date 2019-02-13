@@ -12,7 +12,7 @@ module.exports = {
     '^.+\\.(css|scss)$': 'babel-jest',
     'react-i18next': '<rootDir>/__mocks__/react-i18next.js',
   },
-  setupFiles: ['./test-setup.js'],
+  setupFiles: ['<rootDir>/ft-config/test-setup.js'],
   setupTestFrameworkScriptFile: 'jest-enzyme',
   testEnvironment: 'enzyme',
   testMatch: [
