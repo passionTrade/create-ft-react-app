@@ -27,7 +27,7 @@
     "@babel/core": "7.2.2",
     "@babel/plugin-proposal-export-default-from": "7.2.0",
     "@babel/plugin-proposal-export-namespace-from": "7.2.0",
-    "@fashiontrade/babel-preset-ft-react-app": "^0.1.2",
+    "@fashiontrade/babel-preset-ft-react-app": "^0.1.4",
     "@fashiontrade/eslint-config-ft-react-app": "^0.2.0",
     "@fashiontrade/wardrobe": "^3.4.0",
     "@svgr/webpack": "4.1.0",
