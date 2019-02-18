@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import enzyme, { shallow, mount, render } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
-import { fashionTradeTheme as theme } from '../src/constants/theme';
+import { Theme as WardrobeTheme } from '@fashiontrade/wardrobe';
 
 enzyme.configure({ adapter: new Adapter() });
 
@@ -51,7 +51,7 @@ let themeProvider;
 function buildRenderOptions(options = {}) {
   const { context, childContextTypes } = options;
   if (!themeProvider) {
-    themeProvider = enzyme.mount(<ThemeProvider theme={theme} />, options).instance();
+    themeProvider = enzyme.mount(<ThemeProvider theme={WardrobeTheme} />, options).instance();
   }
   return {
     ...options,

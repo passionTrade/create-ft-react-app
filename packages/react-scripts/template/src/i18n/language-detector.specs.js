@@ -1,5 +1,4 @@
 import i18n from 'i18next';
-import featureFlags from 'constants/featureFlags';
 import LanguageDetector, {
   getNavigatorLanguages,
   selectLanguage,
@@ -75,7 +74,6 @@ describe('i18n/language-detector', () => {
   });
   describe('LanguageDetector', () => {
     beforeEach(() => {
-      featureFlags.languageSetting.enabled = true;
       i18n.init({
         lngs: ['en-GB', 'de-DE'],
         whitelist: ['en-GB', 'de-DE'],

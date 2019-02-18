@@ -97,7 +97,7 @@ module.exports = function(
   appPackage.scripts = {
     start: 'yarn generate-settings && react-scripts start',
     build: 'react-scripts build',
-    test: 'NODE_ENV=test jest --watch',
+    test: 'NODE_ENV=test jest',
     'lint-staged': 'lint-staged',
     lint: 'eslint src',
     eject: 'react-scripts eject',

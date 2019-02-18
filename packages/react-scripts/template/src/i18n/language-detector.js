@@ -1,5 +1,4 @@
 import noop from 'lodash/noop';
-import { hasFeature } from 'utils/withFeature';
 import qs from 'qs';
 
 export function getNavigatorLanguages(navigator) {
