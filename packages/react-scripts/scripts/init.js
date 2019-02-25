@@ -138,6 +138,7 @@ module.exports = function(
     jest: '23.6.0',
     'jest-styled-components': '6.0.1',
     'pre-commit': '1.2.2',
+    'react-hot-loader': '4.7.1',
   });
 
   // ** Moved this code to .eslintrc.js file
