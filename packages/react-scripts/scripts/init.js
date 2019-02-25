@@ -95,12 +95,14 @@ module.exports = function(
     axios: '0.18.0',
     i18next: '14.0.1',
     'i18next-xhr-backend': '1.5.1',
+    jest: '23.6.0',
     moment: '2.22.2',
     'prop-types': '15.6.2',
     qs: '6.5.2',
     'react-i18next': '7.11.1',
     'react-redux': '5.0.7',
     redux: '4.0.0',
+    'redux-devtools-extension': '2.13.8',
     'styled-components': '3.3.3',
   });
 
