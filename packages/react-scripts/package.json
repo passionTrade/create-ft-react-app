@@ -1,6 +1,6 @@
 {
   "name": "@fashiontrade/ft-react-scripts",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "fashionTrade configuration and scripts for Create React App.",
   "repository": "FashionTrade/create-ft-react-app",
   "license": "MIT",
