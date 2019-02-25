@@ -88,7 +88,7 @@ module.exports = function(
   const appPackage = require(path.join(appPath, 'package.json'));
   const useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
 
-  // Copy over some of the devDependencies
+  // Copy over some of the dependencies
   appPackage.dependencies = Object.assign({}, appPackage.dependencies, {
     '@fashiontrade/wardrobe': '^3.4.0',
     '@sentry/browser': '4.4.1',
@@ -134,6 +134,7 @@ module.exports = function(
 
   // These are all the devDependencies that will be copied to the app package.json.
   appPackage.devDependencies = Object.assign({}, appPackage.devDependencies, {
+    '@fashiontrade/eslint-config-ft-react-app': '^0.3.1',
     enzyme: '3.8.0',
     jest: '23.6.0',
     'jest-styled-components': '6.0.1',
