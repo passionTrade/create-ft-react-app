@@ -116,7 +116,7 @@ module.exports = function(
     'lint-staged': 'lint-staged',
     lint: 'eslint src',
     eject: 'react-scripts eject',
-    updateSnapshots: 'NODE_ENV=test jest --updateSnapshot',
+    'update-snapshots': 'NODE_ENV=test jest --updateSnapshot',
     'generate-settings':
       'FT_ENVIRONMENT=dev python3 tools/settings-generator.py public/settings.js --disable-sentry',
     'i18n:phraseapp':
