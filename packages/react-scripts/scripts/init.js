@@ -117,7 +117,11 @@ module.exports = function(
     '*.{js,scss,md}': ['prettier --write', 'git add'],
   };
 
+  // These are all the devDependencies that will be copied to the app package.json.
   appPackage.devDependencies = Object.assign({}, appPackage.devDependencies, {
+    enzyme: '3.8.0',
+    jest: '23.6.0',
+    'jest-styled-components': '6.0.1',
     'pre-commit': '1.2.2',
   });
 
@@ -185,7 +189,7 @@ module.exports = function(
     command = 'npm';
     args = ['install', '--save', verbose && '--verbose'].filter(e => e);
   }
-  args.push('react', 'react-dom');
+  args.push('react', 'react-dom', '@fashiontrade/wardrobe@^3.4.0');
 
   // Install additional template dependencies, if present
   const templateDependenciesPath = path.join(
