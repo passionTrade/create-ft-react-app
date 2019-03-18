@@ -102,7 +102,6 @@ module.exports = function(
     'react-i18next': '7.11.1',
     'react-redux': '5.0.7',
     redux: '4.0.0',
-    'redux-devtools-extension': '2.13.8',
     'styled-components': '3.3.3',
   });
 
@@ -140,6 +139,7 @@ module.exports = function(
     'jest-styled-components': '6.0.1',
     'pre-commit': '1.2.2',
     'react-hot-loader': '4.7.1',
+    'redux-devtools-extension': '2.13.8',
   });
 
   // ** Moved this code to .eslintrc.js file
