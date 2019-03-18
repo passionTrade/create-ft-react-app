@@ -9,6 +9,7 @@ const existingComponents = fs
   .filter(isComponentDirectory);
 
 const componentName = process.argv[process.argv.indexOf('--name') + 1];
+const withStorybook = process.argv.includes('--with-storybook');
 
 if (existingComponents.indexOf(componentName) > -1) {
   logError(`A component with the name "${componentName}" already exists!`);
@@ -56,6 +57,8 @@ fs.writeFileSync(`${componentPath}/${componentName}.js`, ComponentBoilerplate);
 fs.writeFileSync(`${componentPath}/index.js`, `export default from './${componentName}';\n`);
 
 // Create Storybook file.
-fs.writeFileSync(`${componentPath}/${componentName}.stories.js`, StorybookBoilerplate);
+if (withStorybook) {
+  fs.writeFileSync(`${componentPath}/${componentName}.stories.js`, StorybookBoilerplate);
+}
 
 logInfo(`Your component can be found in ${componentPath}`);
