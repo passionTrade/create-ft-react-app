@@ -133,7 +133,7 @@ module.exports = function(
 
   // These are all the devDependencies that will be copied to the app package.json.
   appPackage.devDependencies = Object.assign({}, appPackage.devDependencies, {
-    '@fashiontrade/eslint-config-ft-react-app': '^0.3.1',
+    '@fashiontrade/eslint-config-ft-react-app': '^0.5.0',
     enzyme: '3.8.0',
     jest: '23.6.0',
     'jest-styled-components': '6.0.1',
