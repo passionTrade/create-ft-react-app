@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import XHR from 'i18next-xhr-backend';
 import moment from 'moment';
-import i18nConfig from '../../ft-config/i18n';
+import i18nConfig from '../../pt-config/i18n';
 import LanguageDetector from './language-detector';
 
 const reportMissingLabel = (key) => {
@@ -9,8 +9,8 @@ const reportMissingLabel = (key) => {
   return key;
 };
 
-const isDev = fashionTradeSettings.environment === 'dev';
-const isTest = fashionTradeSettings.environment === 'test';
+const isDev = passionTradeSettings.environment === 'dev';
+const isTest = passionTradeSettings.environment === 'test';
 
 const config = {
   backend: {

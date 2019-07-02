@@ -1,7 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import { ThemeProvider } from 'styled-components';
-import { Theme } from '@fashiontrade/wardrobe';
+import { Theme } from '../pt-config/node_modules/@passiontrade/wardrobe';
 import logo from './logo.svg';
 import './App.css';
 

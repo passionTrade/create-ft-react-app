@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import enzyme, { shallow, mount, render } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
-import { Theme as WardrobeTheme } from '@fashiontrade/wardrobe';
+import { Theme as WardrobeTheme } from '@passiontrade/wardrobe';
 
 enzyme.configure({ adapter: new Adapter() });
 

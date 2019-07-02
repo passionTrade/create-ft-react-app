@@ -6,10 +6,10 @@ import App from './App';
 import createStore from './createStore';
 
 Sentry.init({
-  dsn: fashionTradeSettings.sentry_url,
+  dsn: passionTradeSettings.sentry_url,
   release: window.releaseVersion, // this is defined in index.ejs
-  environment: fashionTradeSettings.environment,
+  environment: passionTradeSettings.environment,
 });
 
 const store = createStore();
-ReactDOM.render(<App store={store} />, document.getElementById('ft-app'));
+ReactDOM.render(<App store={store} />, document.getElementById('pt-app'));

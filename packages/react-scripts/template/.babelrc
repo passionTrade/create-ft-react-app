@@ -1,5 +1,5 @@
 {
-  "presets": ["@fashiontrade/ft-react-app"],
+  "presets": ["@passiontrade/pt-react-app"],
   "env": {
     "production": {
       "only": [

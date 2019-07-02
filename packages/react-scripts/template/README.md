@@ -1,4 +1,4 @@
-This project was bootstrapped with [fashionTrade's Create React App](https://github.com/FashionTrade/create-ft-react-app).
+This project was bootstrapped with [passionTrade's Create React App](https://github.com/passionTrade/create-pt-react-app).
 
 ## Available Scripts
 

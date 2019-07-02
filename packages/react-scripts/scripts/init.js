@@ -90,7 +90,7 @@ module.exports = function(
 
   // Copy over some of the dependencies
   appPackage.dependencies = Object.assign({}, appPackage.dependencies, {
-    '@fashiontrade/wardrobe': '^3.4.0',
+    '@passiontrade/wardrobe': '^3.4.0',
     '@sentry/browser': '4.4.1',
     axios: '0.18.0',
     i18next: '14.0.1',
@@ -102,7 +102,7 @@ module.exports = function(
     'react-i18next': '7.11.1',
     'react-redux': '5.0.7',
     redux: '4.0.0',
-    'styled-components': '3.3.3',
+    'styled-components': '4.3.2',
   });
 
   const useTypeScript = appPackage.dependencies['typescript'] != null;
@@ -133,7 +133,7 @@ module.exports = function(
 
   // These are all the devDependencies that will be copied to the app package.json.
   appPackage.devDependencies = Object.assign({}, appPackage.devDependencies, {
-    '@fashiontrade/eslint-config-ft-react-app': '^0.5.0',
+    '@passiontrade/eslint-config-pt-react-app': '^0.5.0',
     enzyme: '3.8.0',
     jest: '23.6.0',
     'jest-styled-components': '6.0.1',

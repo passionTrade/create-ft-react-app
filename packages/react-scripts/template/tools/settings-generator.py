@@ -41,7 +41,7 @@ def main():
     sys.exit(1)
 
   settings = """
-var fashionTradeSettings = {
+var passionTradeSettings = {
   environment: %s,
   gtmId: %s,
   gtmPostUrlParams: %s,

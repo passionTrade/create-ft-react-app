@@ -40,7 +40,7 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 // Some apps do not need the benefits of saving a web request, so not inlining the chunk
 // makes for a smoother build process.
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
-// ft-specific env variable used in the bundle name.
+// pt-specific env variable used in the bundle name.
 const GIT_VERSION = process.env.GIT_VERSION;
 
 // Check if TypeScript is setup
@@ -353,7 +353,7 @@ module.exports = function(webpackEnv) {
                 babelrc: false,
                 configFile: false,
                 presets: [
-                  require.resolve('@fashiontrade/babel-preset-ft-react-app'),
+                  require.resolve('@passiontrade/babel-preset-pt-react-app'),
                 ],
                 // Make sure we have a unique cache identifier, erring on the
                 // side of caution.
@@ -366,7 +366,7 @@ module.exports = function(webpackEnv) {
                     : isEnvDevelopment && 'development',
                   [
                     'babel-plugin-named-asset-import',
-                    '@fashiontrade/babel-preset-ft-react-app',
+                    '@passiontrade/babel-preset-pt-react-app',
                     'react-dev-utils',
                     'react-scripts',
                   ]
@@ -417,7 +417,7 @@ module.exports = function(webpackEnv) {
                     : isEnvDevelopment && 'development',
                   [
                     'babel-plugin-named-asset-import',
-                    '@fashiontrade/babel-preset-ft-react-app',
+                    '@passiontrade/babel-preset-pt-react-app',
                     'react-dev-utils',
                     'react-scripts',
                   ]

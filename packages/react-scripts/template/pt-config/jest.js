@@ -1,7 +1,7 @@
 module.exports = {
   timers: 'fake',
   globals: {
-    fashionTradeSettings: true,
+    passionTradeSettings: true,
     __DEV__: true,
   },
   collectCoverageFrom: ['src/**/*.{js}', '!src/**/*.test.{js}', '!src/app.js'],
@@ -14,7 +14,7 @@ module.exports = {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/__mocks__/file.js',
   },
-  setupFiles: ['<rootDir>/ft-config/test-setup.js'],
+  setupFiles: ['<rootDir>/ptconfig/test-setup.js'],
   setupTestFrameworkScriptFile: 'jest-enzyme',
   testEnvironment: 'enzyme',
   testMatch: [

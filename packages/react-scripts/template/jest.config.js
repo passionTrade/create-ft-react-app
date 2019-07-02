@@ -1,1 +1,1 @@
-module.exports = require('./ft-config/jest');
+module.exports = require('./pt-config/jest');
