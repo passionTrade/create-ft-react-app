@@ -1,7 +1,7 @@
 To bootstrap a CRA with these custom react scripts run:
 
 ```
-create-react-app <your-app-name> --scripts-version @fashiontrade/ft-react-scripts
+create-react-app <your-app-name> --scripts-version @passiontrade/pt-react-scripts
 ```
 
 # Create React App [![Build Status](https://travis-ci.org/facebook/create-react-app.svg?branch=master)](https://travis-ci.org/facebook/create-react-app) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/pulls)
